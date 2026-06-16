@@ -13,4 +13,5 @@ Install formula/cask `brew install [--cask] eendroroy/tools/<formula>`
 
 ## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+The project is available as open source under the terms of
+the [AGPL3 License](https://www.fsf.org/licensing/licenses/agpl.html).
