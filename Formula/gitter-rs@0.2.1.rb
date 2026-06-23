@@ -1,21 +1,21 @@
 class GitterRs < Formula
   desc "A fast, concurrent CLI utility for running commands across multiple Git repositories."
   homepage "https://github.com/eendroroy/gitter-rs"
-  version "0.2.1"
+  version "0.2.0"
   license "AGPL-3"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-aarch64-apple-darwin.zip"
-    sha256 "07419c18cc2bbd3c8cf88c47cfbc070986debf4de55f0e0305b903c6aa68dc3d"
+    sha256 "a35b34ecb209c2f9e1b858bed18b39fda47484d4f4685b3d087de0f509c7a27c"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-x86_64-apple-darwin.zip"
-    sha256 "87e51957b2d4acf84b4de59c4d8549a2ae76dad838a6a759638b4a0c6988f5cf"
+    sha256 "a2adc131aa8ce7fb495d0d5332c96d6cd54766aeb7fd805e6427c9219dcbfb8a"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-aarch64-unknown-linux-gnu.zip"
-    sha256 "c6531bffd650dc0955cbd583d742c740e49b82f44a353553019719ce6ba7eb63"
+    sha256 "d288e9085f3fecabc8a163f8bf391db3b5ebe8c6d2f9cd48315c8710bd24cdd5"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-x86_64-unknown-linux-gnu.zip"
-    sha256 "758f4002b0b7dc4a12dc17b617105dafe2bbc3674f3200e2068d3e9ca05699de"
+    sha256 "fec7e697538798e73df0b551f9566ed996e32cec0df69ddecd58173a8cd7594e"
   end
 
   def install
