@@ -1,4 +1,4 @@
-class GitterRs < Formula
+class GitterRsAT020 < Formula
   desc "A fast, concurrent CLI utility for running commands across multiple Git repositories."
   homepage "https://github.com/eendroroy/gitter-rs"
   version "0.2.0"
