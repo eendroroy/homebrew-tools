@@ -6,16 +6,16 @@ class GitterRs < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-aarch64-apple-darwin.zip"
-    sha256 "f25c9bea840a60e34e8d5870bdb18832cb78903a55fe1f08cad285a8bc5d7f3a"
+    sha256 "a3a7adef005f3140a9873453ecded3101166556c558a43a67d72d724c777389c"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-x86_64-apple-darwin.zip"
-    sha256 "c03e6706bb50ac341bf14533b691b9072b00eea297ecee2e2e84100891bcb9d0"
+    sha256 "83189b5230b2b2d417c7bdb74b57937c3bc8c6df7718d5321af21412e2c40954"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-aarch64-unknown-linux-gnu.zip"
-    sha256 "d0377f6476153566cbb2352b0777a7c45d30cbe91d46c6b8a2657a3aeeb78213"
+    sha256 "9319a6887b54ce657c7a0ff6f08614b212f309d7376e787c1dee126912ebea9c"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/eendroroy/gitter-rs/releases/download/#{version}/gitter-x86_64-unknown-linux-gnu.zip"
-    sha256 "08abfb4ff8fbf0208fcf547a6cef3a681b84cfdfc94299071f9dda877f6339a5"
+    sha256 "134b0bdbd720aca9003acdf331c02b3b4ee879869c6875550eec8a74b9b507b6"
   end
 
   def install
